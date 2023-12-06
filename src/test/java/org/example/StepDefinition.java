@@ -32,6 +32,7 @@ public class StepDefinition {
         System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
+        firefoxOptions.setHeadless(true);
         driver = new FirefoxDriver();
         driver.get("https://www.google.fr");
     }
